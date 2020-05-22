@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
 <head>
-<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
 <meta charset="ISO-8859-1">
 <title>Liga de fútbol profesional- Home</title>
 </head>
@@ -26,7 +26,7 @@
 				<div class="card-deck">
 					<div class="card col-4">
 						<div id="card-inside">
-							<img alt="suspendidos" class="card-img" src="../static/img/suspendidos.jpg">
+							<img th:src="@{/img/suspendidos.jpg}" alt="suspendidos" class="card-img" src="../static/img/suspendidos.jpg">
 							<div class="card-body">
 								<h4 class="card-title">12/03/20</h4>
 								<p class="card-text">Nueva noticia de los partidos suspendidos por la cuarentena</p>
@@ -35,7 +35,7 @@
 					</div>
 					<div class="card col-4">
 						<div id="card-inside">
-							<img alt="repeticion" class="card-img" src="../static/img/repeticion.jpg">
+							<img th:src="@{/img/repeticion.jpg}" alt="repeticion" class="card-img" src="../static/img/repeticion.jpg">
 							<div class="card-body">
 								<h4 class="card-title">13/03/20</h4>
 								<p class="card-text">Repetición de la transmición en vivo de la final de la copa anual de profesional</p>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="card col-4">
 						<div id="card-inside">
-							<img alt="reprog" class="card-img" src="../static/img/reprog.jpg">
+							<img th:src="@{/img/reprog.jpg}" alt="reprog" class="card-img" src="../static/img/reprog.jpg">
 							<div class="card-body">
 								<h4 class="card-title">20/03/20</h4>
 								<p class="card-text">Reprogramación de sorteos para las próximas fechas</p>
