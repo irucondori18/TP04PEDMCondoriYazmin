@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link th:ref="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
 <meta charset="ISO-8859-1">
 <title>Liga de fútbol profesional- Fixture</title>
 </head>
@@ -20,11 +21,27 @@
 				</nav>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-9">
-			
+		<div class="row0">
+			<div class="cont colum-9">
+				<table>
+					<tr>
+						<th>Fecha</th>
+						<th colspan="2">Equipo 1</th>
+						<th colspan="2">Equipo 2</th>
+					</tr>
+					<tr>
+						<td>Viernes 26/07/2020</td>
+						<td></td>
+						<td>Racing</td>
+						<td></td>
+						<td>Unión</td>
+					</tr>
+				</table>
+				
+
+
 			</div>
-			<div class="col-3">
+			<div class="publicidad colum-3">
 				<div class="ausp"><h3>Auspiciantes</h3></div>
 				<div>
 				<img alt="adidas" class="ausp-img" src="../static/img/adidas.jpg">
@@ -42,10 +59,10 @@
 			</div>
 			<div class="footer-redes">
 			<p><h4>Seguínos:</h4></p>
-				<div class="red"><img alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laliga</div>
-				<div class="red"><img alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga</div>
-				<div class="red"><img alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLiga</div>
-				<div class="red"><img alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLiga</div>
+				<div class="red"><img alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laligaAFA</div>
+				<div class="red"><img alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga AFA</div>
+				<div class="red"><img alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLigaAFA</div>
+				<div class="red"><img alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLigaAFA</div>
 			</div>
 		</div>
 	</div>
