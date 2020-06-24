@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="https://www.thymeleaf.org">
 <head>
-<link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
-<link th:ref="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
 <meta charset="ISO-8859-1">
 <title>Liga de fútbol profesional- Home</title>
 </head>
@@ -15,9 +15,9 @@
 			</div>
 			<div class="nav">
 				<nav>
-					<a class="nav-link" href="index.html">Home</a>
-					<a class="nav-link" href="fixture.html">Fixture y resultados</a>
-					<a class="nav-link" href="equipos.html">Equipos</a>
+					<a class="nav-link" href="inicio">Home</a>
+					<a class="nav-link" href="fixture">Fixture y resultados</a>
+					<a class="nav-link" href="equipos">Equipos</a>
 				</nav>
 			</div>
 		</div>
@@ -57,10 +57,10 @@
 			<div class="publicidad colum-3">
 				<div class="ausp"><h3>Auspiciantes</h3></div>
 				<div>
-				<img alt="adidas" class="ausp-img" src="../static/img/adidas.jpg">
-				<img alt="santander" class="ausp-img" src="../static/img/santander.jpg">
-				<img alt="chevrolet" class="ausp-img" src="../static/img/chevrolet.jpg">
-				<img alt="fravega" class="ausp-img" src="../static/img/fravega.jpg">
+				<img th:src="@{/img/adidas.jpg}" alt="adidas" class="ausp-img" src="../static/img/adidas.jpg">
+				<img th:src="@{/img/santander.jpg}" alt="santander" class="ausp-img" src="../static/img/santander.jpg">
+				<img th:src="@{/img/chevrolet.jpg}" alt="chevrolet" class="ausp-img" src="../static/img/chevrolet.jpg">
+				<img th:src="@{/img/fravega.jpg}"alt="fravega" class="ausp-img" src="../static/img/fravega.jpg">
 				</div>
 			</div>
 		</div>
@@ -71,10 +71,10 @@
 			</div>
 			<div class="footer-redes">
 			<p><h4>Seguínos:</h4></p>
-				<div class="red"><img alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laligaAFA</div>
-				<div class="red"><img alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga AFA</div>
-				<div class="red"><img alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLigaAFA</div>
-				<div class="red"><img alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLigaAFA</div>
+				<div class="red"><img th:src="@{/img/instagram.png}" alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laligaAFA</div>
+				<div class="red"><img th:src="@{/img/facebook.png}" alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga AFA</div>
+				<div class="red"><img th:src="@{/img/twitter.png}" alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLigaAFA</div>
+				<div class="red"><img th:src="@{/img/youtube.png}" alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLigaAFA</div>
 			</div>
 		</div>
 	</div>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es" xmlns:th="https://www.thymeleaf.org">
 <head>
-<link th:ref="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
-<link th:ref="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" href="../static/css/style.css">
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
 <meta charset="ISO-8859-1">
 <title>Liga de fútbol profesional- Equipos</title>
 </head>
@@ -15,51 +15,51 @@
 			</div>
 			<div class="nav">
 				<nav>
-					<a class="nav-link" href="index.html">Home</a>
-					<a class="nav-link" href="fixture.html">Fixture y resultados</a>
-					<a class="nav-link" href="equipos.html">Equipos</a>
+					<a class="nav-link" href="inicio">Home</a>
+					<a class="nav-link" href="fixture">Fixture y resultados</a>
+					<a class="nav-link" href="equipos">Equipos</a>
 				</nav>
 			</div>
 		</div>
 		<div class="row0">
 			<div class="cont colum-9">
 				<div class="equipo">
-					<img alt="boca" class="equipo-img" src="../static/img/boca.png">
+					<img th:src="@{/img/boca.png}" alt="boca" class="equipo-img" src="../static/img/boca.png">
 					<div class="descrip">
 					<p>El <b>Club Atlético Boca Juniors</b> fue fundado el 3 de abril de 1905 por cinco inmigrantes italianos que vivían en el barrio de La Boca. Sin siquiera imaginarlo, estos cinco jóvenes escribieron los primeros párrafos de la historia del club más popular de la Argentina.</p>
 					<p>Boca Juniors jugó en la liga local y en la segunda división de fútbol amateur, hasta que ascendieron a la primera división en 1913. Ganó seis campeonatos amateurs en 1919, 1923, 1924, 1926 y 1930. Tras la profesionalización del fútbol en Argentina, Boca ganó el primer título en 1931.</p>
 					</div>
 				</div>
 				<div class="equipo">
-					<img alt="river" class="equipo-img" src="../static/img/river.png">
+					<img th:src="@{/img/river.png}" alt="river" class="equipo-img" src="../static/img/river.png">
 					<div class="descrip">
 					<p>El <b>Club Atlético River Plate</b> –también conocido como River Plate o simplemente River– es un club argentino fundado en 1901, famoso por su equipo de fútbol. Actualmente, el club está ubicado en el barrio de Núñez, Buenos Aires; sin embargo, su primera sede estaba situada en La Boca.</p>
 					<p>Tras la fundación del club el 25 de mayo de 1901, se presentó el primer equipo, formado por: Moltedo, Ratto, Cevallos, Peralta, Carrega, Bard (el presidente), Kitzler, Martínez, Flores, Zanni y Messina.</p>
 					</div>
 				</div>
 				<div class="equipo">
-					<img alt="independiente" class="equipo-img" src="../static/img/independiente.png">
+					<img th:src="@{/img/independiente.png}" alt="independiente" class="equipo-img" src="../static/img/independiente.png">
 					<div class="descrip">
 					<p>El <b>Club Atlético Independiente</b>, conocido popularmente como Independiente o por su sigla CAI, fue fundado el 1 de enero de 1905 por unos jóvenes empleados independistas del Club Maipú.</p>
 					<p>Ejerce su localía en el estadio llamado Libertadores de América que cuenta con un aforo de 52 364 espectadores. Los colores que identifican al equipo son el rojo, y han sido utilizados en los colores de su uniforme desde 1908.[8]</p>
 					</div>
 				</div>
 				<div class="equipo">
-					<img alt="racing" class="equipo-img" src="../static/img/racing.png">
+					<img th:src="@{/img/racing.png}" alt="racing" class="equipo-img" src="../static/img/racing.png">
 					<div class="descrip">
 					<p><b>Racing Club</b>, uno de los dos equipos más importantes de la provincia de Buenos Aires y uno de los cinco grandes del fútbol argentino, también es conocido como Racing Club de Avellaneda o, simplemente, Racing.</p>
 					<p>Fundado en 1903 (es de los primeros equipos del país), los colores que identifican a la institución son el celeste y el blanco en honor a los colores patrios de la República Argentina.</p>
 					</div>
 				</div>
 				<div class="equipo">
-					<img alt="san_lorenzo" class="equipo-img" src="../static/img/san_lorenzo.png">
+					<img th:src="@{/img/san_lorenzo.png}" alt="san_lorenzo" class="equipo-img" src="../static/img/san_lorenzo.png">
 					<div class="descrip">
 					<p>El <b>Club Atlético San Lorenzo de Almagro</b> es uno de los considerados cinco equipos grandes del fútbol argentino. Fue fundado en el barrio de Almagro de la ciudad de Buenos Aires el primer día de abril de 1908, por iniciativa de un grupo de jóvenes con la colaboración del sacerdote salesiano R.P. Lorenzo Massa.</p>
 					<p> Los colores elegidos para su casaca fueron el azul, que simboliza el ideal y el rojo que simboliza la lucha.</p>
 					</div>
 				</div>
 				<div class="equipo">
-					<img alt="velez" class="equipo-img" src="../static/img/velez.png">
+					<img th:src="@{/img/velez.png}" alt="velez" class="equipo-img" src="../static/img/velez.png">
 					<div class="descrip">
 					<p>El <b>Club Atlético Vélez Sársfield</b> es un club argentino fundado el 1 de enero de 1910 por Nicolás Marín Moreno, Martín Portillo y Julio Guglielmone, quienes eligieron ese nombre porque el potrero donde jugaban se encontraba en los alrededores de la estación Vélez Sársfield del Ferrocarril del Oeste (hoy estación Floresta). Actualmente, el club está ubicado en el barrio de Liniers, Buenos Aires; sin embargo, su primera sede estaba situada en Villa Luro.</p>
 					</div>
@@ -69,10 +69,10 @@
 			<div class="publicidad colum-3">
 				<div class="ausp"><h3>Auspiciantes</h3></div>
 				<div>
-				<img alt="adidas" class="ausp-img" src="../static/img/adidas.jpg">
-				<img alt="santander" class="ausp-img" src="../static/img/santander.jpg">
-				<img alt="chevrolet" class="ausp-img" src="../static/img/chevrolet.jpg">
-				<img alt="fravega" class="ausp-img" src="../static/img/fravega.jpg">
+				<img th:src="@{/img/adidas.jpg}" alt="adidas" class="ausp-img" src="../static/img/adidas.jpg">
+				<img th:src="@{/img/santander.jpg}" alt="santander" class="ausp-img" src="../static/img/santander.jpg">
+				<img th:src="@{/img/chevrolet.jpg}" alt="chevrolet" class="ausp-img" src="../static/img/chevrolet.jpg">
+				<img th:src="@{/img/fravega.jpg}"alt="fravega" class="ausp-img" src="../static/img/fravega.jpg">
 				</div>
 			</div>
 		</div>
@@ -83,10 +83,10 @@
 			</div>
 			<div class="footer-redes">
 			<p><h4>Seguínos:</h4></p>
-				<div class="red"><img alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laligaAFA</div>
-				<div class="red"><img alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga AFA</div>
-				<div class="red"><img alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLigaAFA</div>
-				<div class="red"><img alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLigaAFA</div>
+				<div class="red"><img th:src="@{/img/instagram.png}" alt="instagram" class="redes-img" src="../static/img/instagram.png"> @laligaAFA</div>
+				<div class="red"><img th:src="@{/img/facebook.png}" alt="facebook" class="redes-img" src="../static/img/facebook.png"> La Liga AFA</div>
+				<div class="red"><img th:src="@{/img/twitter.png}" alt="twitter" class="redes-img" src="../static/img/twitter.png"> @LaLigaAFA</div>
+				<div class="red"><img th:src="@{/img/youtube.png}" alt="youtube" class="redes-img" src="../static/img/youtube.png"> LaLigaAFA</div>
 			</div>
 		</div>
 	</div>
