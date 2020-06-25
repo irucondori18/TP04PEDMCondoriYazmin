@@ -24,17 +24,17 @@
 		<div class="row0">
 			<div class="cont colum-9">
 				<div class="not"><h2>Noticias</h2></div>
-				<div class="card-deck0">
+				<div class="card-deck0" th:each="noticia : ${todasLasNoticias}">
 					<div class="card-0 colum-4">
 						<div id="card-inside0">
 							<img th:src="@{/img/suspendidos.jpg}" alt="suspendidos" class="card-img0" src="../static/img/suspendidos.jpg">
 							<div class="card-body0">
-								<h5 class="card-title0">12/03/20</h5>
-								<p class="card-text0">Nueva noticia de los partidos suspendidos por la cuarentena</p>
+								<h5 class="card-title0" th:text="${noticia.titulo}">12/03/20</h5>
+								<p class="card-text0" th:text="${noticia.resumen}">Nueva noticia de los partidos suspendidos por la cuarentena</p>
 							</div>
 						</div>
 					</div>
-					<div class="card-0 colum-4">
+					<!-- <div class="card-0 colum-4">
 						<div id="card-inside0">
 							<img th:src="@{/img/repeticion.jpg}" alt="repeticion" class="card-img0" src="../static/img/repeticion.jpg">
 							<div class="card-body0">
@@ -51,7 +51,7 @@
 								<p class="card-text0">Reprogramación de sorteos para las próximas fechas</p>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<div class="publicidad colum-3">

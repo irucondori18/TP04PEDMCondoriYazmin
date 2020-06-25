@@ -31,6 +31,12 @@ public class INoticiaServiceImp implements INoticiaService{
 		return iNoticiaRepository.findAll();
 	}
 
+	@Override
+	public void borrarNoticia(Noticia unaNoticia) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	
 	
 }

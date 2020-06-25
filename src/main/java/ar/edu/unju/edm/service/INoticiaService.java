@@ -11,6 +11,7 @@ public interface INoticiaService {
 	public void guardarNoticia(Noticia unaNoticia);
 	public Noticia buscarNoticia(String titulo);
 	public Iterable<Noticia> buscarTodasNoticias();
+	public void borrarNoticia (Noticia unaNoticia);
 	//Set, Iterable, List 3 y más también existen
 	
 }
